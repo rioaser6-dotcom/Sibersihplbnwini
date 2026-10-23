@@ -1,0 +1,68 @@
+# =====================================================
+# KONFIGURASI LOKAL & KREDENSIAL
+# =====================================================
+# Konfigurasi koneksi database lokal (gunakan config/database.example.php)
+/config/database.php
+/config/database.local.php
+
+# Berkas environment dan kredensial
+.env
+.env.*
+!.env.example
+credentials*.json
+secret*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+
+# Skrip seed berisi password default (gunakan seed.example.php)
+/seed.php
+
+# =====================================================
+# BACKUP & DUMP DATABASE (BERISI DATA SENSITIF)
+# =====================================================
+/backup/
+*.sql.gz
+*.dump
+*.bak
+/db_*.sql
+/*.sql
+
+# Skema database tanpa data tetap diikutsertakan
+!/database/*.sql
+
+# =====================================================
+# UPLOAD PENGGUNA (FOTO/DOKUMEN PRIBADI)
+# =====================================================
+/uploads/*
+!/uploads/.htaccess
+
+# =====================================================
+# DEPENDENSI, CACHE, DAN FILE BUILD
+# =====================================================
+node_modules/
+vendor/
+.cache/
+build/
+dist/
+
+# =====================================================
+# LOG & BERKAS SEMENTARA
+# =====================================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# =====================================================
+# EDITOR & SISTEM OPERASI
+# =====================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

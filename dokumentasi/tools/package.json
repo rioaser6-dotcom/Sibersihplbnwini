@@ -1,0 +1,21 @@
+{
+  "name": "dokumentasi-sibersih-plbn-wini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Alat bantu pembuatan Panduan PDF dan Presentasi PPTX SIBERSIH PLBN Wini",
+  "scripts": {
+    "capture": "node capture.js",
+    "build": "node build.js",
+    "pptx": "node build-pptx.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "marked": "^18.1.1",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.4.299",
+    "pptxgenjs": "^4.0.1",
+    "puppeteer-core": "^25.14.0"
+  }
+}
